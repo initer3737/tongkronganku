@@ -1,0 +1,40 @@
+/* 600px tablet min width 768 desktop  */
+.profile img{
+  /* height: 420px; */
+}
+#profile-pages .fa-facebook{
+  color: blue;
+}
+#profile-pages .fa-instagram{
+  color: rgb(231, 90, 137);
+}
+
+.btn{
+  border-radius: 100px;
+}
+main.bg-main , .bg-abu{
+  background-color: rgba(236, 236, 236, 0.836);
+  color: black;
+}
+header{
+  border-bottom: rgb(5, 50, 77) solid;
+}
+footer{
+  border-top: rgb(5, 50, 77) solid;
+  letter-spacing: 1.25px;
+}
+
+.navbar-item{
+  display: flex;
+
+}
+.navbar-toggler{
+  float: right;
+}
+
+@media screen and (max-width:992px) {
+  .navbar-item{
+    display: flex;
+    flex-direction: column;
+  }
+}
