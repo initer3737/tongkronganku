@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className=''>
         <Template title={'homepage'}>
-           <Parallax>
+           <Parallax img={img.src}>
              <h1 className="font-semibold text-center text-white">
               hello world!
              </h1>
