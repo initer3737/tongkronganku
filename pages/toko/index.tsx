@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { 
   Template,
   Icon 
@@ -19,7 +20,14 @@ export default function Toko() {
     <>
         <Template title="toko | epri">
           <div className="flex items-center justify-center gap-3 py-4 mt-5 w-fit">
-            <img src={epri.src} alt="epri" className="w-3/6 gap-3 rounded-lg shadow-lg shadow-purple-300" />
+            <Image 
+              src={epri.src} 
+              alt="epri" 
+              className="w-3/6 gap-3 rounded-lg shadow-lg shadow-purple-300" loading="lazy" 
+              width={600}
+              height={450}
+              />
+              
             <div className="flex flex-col gap-3 p-4 bg-purple-200 rounded-md shadow-md shadow-purple-400">
               <a href="https://www.instagram.com/epri_bochel/" target={'_blank'} className="flex flex-row gap-2 px-5 py-3 text-white translate-y-2 bg-purple-600 rounded-md shadow-lg hover:border hover:border-2 hover:border-purple-600 shadow-purple-400 hover:text-purple-900 hover:bg-purple-50">
                 <Icon IconName={"instagram"} Variant={"text-pink-400"}/>
@@ -35,16 +43,73 @@ export default function Toko() {
             <Icon IconName={"info-circle-fill"} Variant={"text-purple-700"}/> products
            </p>
             <div className="flex flex-col flex-wrap justify-center gap-3 py-5 bg-flex md:flex-row">
-              <img src={product1.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
-              <img src={product2.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
-              <img src={product3.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
-              <img src={product4.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
-              <img src={product5.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
-              <img src={product6.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
-              <img src={product7.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
-              <img src={product8.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
-              <img src={product9.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
-              <img src={product10.src} alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" />
+              <Image 
+                src={product1.src} 
+                alt="cilok" 
+                className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
+                width={600}
+                height={450}
+                />
+              <Image 
+                src={product2.src} alt="cilok" 
+                className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
+                width={600}
+                height={450} 
+                />
+              <Image 
+                src={product3.src} 
+                alt="cilok" 
+                className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
+                width={600}
+                height={450}
+                />
+              <Image 
+                src={product4.src} 
+                alt="cilok" 
+                className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
+                width={600}
+                height={450} 
+                />
+              <Image 
+                src={product5.src} 
+                alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
+                width={600}
+                height={450} 
+                />
+              <Image 
+                src={product6.src} 
+                alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
+                width={600}
+                height={450}
+                />
+              <Image 
+                src={product7.src} 
+                alt="cilok" 
+                className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
+                width={600}
+                height={450} 
+                />
+              <Image 
+                src={product8.src} 
+                alt="cilok" 
+                className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
+                width={600}
+                height={450}
+                />
+              <Image 
+                src={product9.src} 
+                alt="cilok" 
+                className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
+                width={600}
+                height={450}
+                />
+              <Image 
+                src={product10.src} 
+                alt="cilok" 
+                className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
+                width={600}
+                height={450}
+                />
             </div>
 
         </Template>
