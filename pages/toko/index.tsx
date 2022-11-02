@@ -23,9 +23,11 @@ export default function Toko() {
             <Image 
               src={epri.src} 
               alt="epri" 
-              className="w-3/6 gap-3 rounded-lg shadow-lg shadow-purple-300" loading="lazy" 
+              className="w-3/6 gap-3 rounded-lg shadow-lg shadow-purple-300" 
+              loading="lazy" 
               width={600}
               height={450}
+              
               />
               
             <div className="flex flex-col gap-3 p-4 bg-purple-200 rounded-md shadow-md shadow-purple-400">
@@ -49,12 +51,14 @@ export default function Toko() {
                 className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
                 width={600}
                 height={450}
+                loading={'lazy'}
                 />
               <Image 
                 src={product2.src} alt="cilok" 
                 className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
                 width={600}
                 height={450} 
+                loading={'lazy'}
                 />
               <Image 
                 src={product3.src} 
@@ -62,6 +66,7 @@ export default function Toko() {
                 className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
                 width={600}
                 height={450}
+                loading={'lazy'}
                 />
               <Image 
                 src={product4.src} 
@@ -69,18 +74,21 @@ export default function Toko() {
                 className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
                 width={600}
                 height={450} 
+                loading={'lazy'}
                 />
               <Image 
                 src={product5.src} 
                 alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
                 width={600}
                 height={450} 
+                loading={'lazy'}
                 />
               <Image 
                 src={product6.src} 
                 alt="cilok" className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
                 width={600}
                 height={450}
+                loading={'lazy'}
                 />
               <Image 
                 src={product7.src} 
@@ -88,6 +96,7 @@ export default function Toko() {
                 className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
                 width={600}
                 height={450} 
+                loading={'lazy'}
                 />
               <Image 
                 src={product8.src} 
@@ -95,6 +104,7 @@ export default function Toko() {
                 className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
                 width={600}
                 height={450}
+                loading={'lazy'}
                 />
               <Image 
                 src={product9.src} 
@@ -102,6 +112,7 @@ export default function Toko() {
                 className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600" 
                 width={600}
                 height={450}
+                loading={'lazy'}
                 />
               <Image 
                 src={product10.src} 
@@ -109,6 +120,7 @@ export default function Toko() {
                 className="w-full rounded-md shadow-lg md:w-3/12 shadow-purple-600"
                 width={600}
                 height={450}
+                loading={'lazy'}
                 />
             </div>
 
