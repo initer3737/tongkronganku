@@ -16,8 +16,8 @@ export default function Navigasi() {
             </a>
           </Link>
         </li>
-     <div className="fixed md:bg-none md:flex md:static inset-y-1/2">
-     <ul className="px-3 rounded-md shadow-lg shadow-violet-800 backdrop-sepia-0 md:rounded-none md:border-none md:shadow-none md:flex-row md:flex md:gap-3">
+     <div className="md:flex text-xl">
+     <ul className="px-3 rounded-md backdrop-sepia-0 md:rounded-none md:border-none md:shadow-none  flex md:gap-3">
       <li>
           <Link href={'toko'} legacyBehavior>
             <a className={`flex flex-row gap-1 transition ease-in hover:text-purple-200 500 ${path[1]==='toko'?'text-purple-900':''}`}>

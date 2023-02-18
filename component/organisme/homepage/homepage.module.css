@@ -1,0 +1,17 @@
+.ImageContainer img{
+    border: 1px solid rgba(128, 0, 128,.8);
+    transition: ease-out .6s;
+    height: 100%;
+    position: relative;
+    filter: brightness(55%);
+}
+.ImageContainer img:hover{
+    transform: perspective(100px) translateZ(10px);
+     mix-blend-mode:normal;
+     transition: ease-in .6s;
+     filter: brightness(75%);
+}  
+    
+.ImageContainer {
+    overflow: hidden;
+}
