@@ -29,6 +29,9 @@
 }
 .kotak:hover{
     opacity: 1;
+    /* border-radius: 0px 0px 570px 570px; */
+    /* text-shadow: 0px 2px 5px white; */
+    box-shadow: inset -2px -2px 12px darkviolet;
 }
 .kotak:hover ~ .ImageContainer img{
     transform: perspective(100px) translateZ(50px);

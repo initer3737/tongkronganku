@@ -51,13 +51,13 @@ export default function Homepage() {
       <div className="relative overflow-hidden w-full md:w-1/2">
         <Image src={food7.src} data-text={'sasa'} className='object-cover w-full' width='512' height='112' alt={'food1'} loading={'lazy'} />
         <div className={homepageStyle.kotak}>
-          yummy tummy!
+          veggie umami crunchy!
         </div>
       </div>
       <div className="relative overflow-hidden w-full md:w-1/2">
         <Image src={food8.src} data-text={'sasa'} className='object-cover w-full' width='512' height='112' alt={'food1'} loading={'lazy'} />
         <div className={homepageStyle.kotak}>
-          sweetness!
+          sweetty creamy milky!
         </div>
       </div>
     </div>

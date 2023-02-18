@@ -31,11 +31,11 @@ export default function Toko() {
               />
               
             <div className="flex flex-col gap-3 p-4 bg-purple-200 rounded-md shadow-md shadow-purple-400">
-              <a href="https://www.instagram.com/epri_bochel/" target={'_blank'} className="flex flex-row gap-2 px-5 py-3 text-white translate-y-2 bg-purple-600 rounded-md shadow-lg hover:border hover:border-2 hover:border-purple-600 shadow-purple-400 hover:text-purple-900 hover:bg-purple-50">
+              <a href="https://www.instagram.com/epri_bochel/" target={'_blank'} className="flex flex-row gap-2 px-5 py-3 text-white translate-y-2 bg-purple-600 rounded-md shadow-lg border border-2 border-purple-600 shadow-purple-400 hover:text-purple-900 hover:bg-purple-50 transition ease-in 500">
                 <Icon IconName={"instagram"} Variant={"text-pink-400"}/>
                 instagram
               </a>
-              <a href="https://wa.me/6289502624920" target={'_blank'} className="flex flex-row gap-2 px-5 py-3 text-white translate-y-2 rounded-md shadow-lg bg-emerald-600 shadow-emerald-400 hover:text-emerald-900 hover:bg-emerald-50 hover:border hover:border-2 hover:border-emerald-600">
+              <a href="https://wa.me/6289502624920" target={'_blank'} className="flex flex-row gap-2 px-5 py-3 text-white translate-y-2 rounded-md shadow-lg bg-emerald-600 shadow-emerald-400 hover:text-emerald-900 hover:bg-emerald-50 border border-2 border-emerald-600">
                 <Icon IconName={"whatsapp"} Variant={"text-emerald-400"}/>
                 whatsapp
               </a>
