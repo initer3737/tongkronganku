@@ -1,8 +1,8 @@
 import { ReactNode } from "react"
 import Head from "next/head"
 import {
-    Header,
-    Footer
+    Footer,
+    Navigasi
 }from '../../asembleKomponen'
 
  const Template:React.FC<{title:string,children:ReactNode  }>
@@ -19,7 +19,7 @@ import {
       </Head>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col">
-            <Header/>
+            <Navigasi/>
             <div className="bg-purple-100 ">
               {children}
             </div>

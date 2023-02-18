@@ -1,42 +1,49 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { Icon } from "../../atom"
+import Image from "next/image";
+import Img1 from '../../../assets/imgWebsite/img1.jpg'
+import Img2 from '../../../assets/imgWebsite/img2.jpg'
+import Img3 from '../../../assets/imgWebsite/img3.jpg'
+import Img4 from '../../../assets/imgWebsite/img4.jpg'
+import Img5 from '../../../assets/imgWebsite/img5.jpg'
+import Img6 from '../../../assets/imgWebsite/img6.jpg'
+import Img7 from '../../../assets/imgWebsite/img7.png'
+import Img8 from '../../../assets/imgWebsite/img8.jpg'
+import { useEffect, useState } from "react";
+import headerCss from './header.module.css'
+//===============================
 export default function Header() {
   const {pathname}=useRouter();
     const path=pathname.split('/');
+    const sliderImg=[Img1,Img2, Img3, Img4,Img5,Img6, Img7,Img8]
+    const sliderText=['healing','comfortable', 'flavour', 'socials','classic','yummy', 'fresh','clean']
+    let [slider,setSlider]=useState<Number>(0);
+    //===========
+    useEffect(()=>{
+      const slidersSlide=setInterval(()=>{
+          setSlider((prevvalue=>(Number(prevvalue)+1)))
+        if( Number(slider) >= sliderImg.length -1){
+            setSlider(0)
+        }
+      },3000)
+      return ()=>{
+        clearInterval(slidersSlide)
+      }
+    },[slider])
   return (
-    <nav className="bg-gradient-to-r from-blue-500 via-purple-500 to-sky-200">
-      <ul className="flex flex-row gap-3 py-3 text-white px-7">
-        <li>
-          <Link href={'/'} legacyBehavior>
-            <a className={`flex flex-row gap-1 ${path[1]===''?'text-cyan-900':''}`}>
-              <Icon IconName={"house"} Variant={"text-teal-900"} /> 
-              <Icon IconName={path[1]===''?"diamond-fill":''} Variant={"text-cyan-400 shadow-violet-600"} /> 
-              tongkronganku
-            </a>
-          </Link>
-        </li>
-     <div className="fixed md:bg-none md:flex md:static inset-y-1/2">
-     <ul className="px-3 rounded-md shadow-lg shadow-sky-800 backdrop-sepia-0 md:rounded-none md:border-none md:shadow-none md:flex-row md:flex md:gap-3">
-      <li>
-          <Link href={'toko'} legacyBehavior>
-            <a className={`flex flex-row gap-1 transition ease-in hover:text-sky-200 500 ${path[1]==='toko'?'text-cyan-900':''}`}>
-              <Icon IconName={path[1]==='toko'?"diamond-fill":''} Variant={"text-cyan-400 shadow-violet-600"} /> 
-              toko
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href={'tentang'} legacyBehavior>
-            <a className={`flex flex-row gap-1 transition ease-in hover:text-sky-200 ${path[1]==='tentang'?'text-cyan-900':''}`}>
-              <Icon IconName={path[1]==='tentang'?"diamond-fill":''} Variant={"text-cyan-400 shadow-violet-600"} /> 
-              tentang
-            </a>
-          </Link>
-        </li>
-     </ul>
-      </div>   
-      </ul>
-    </nav>
+      <header className="relative">
+        <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">
+            <h1 className={headerCss.text}>{sliderText[Number(slider)]}</h1>
+        </div>
+       <Image 
+          src={sliderImg[Number(slider)].src} 
+          alt="cilok" 
+          className={`w-[100vw] h-[60vh] object-cover gambar-slider`} 
+          width={600}
+          height={450}
+          loading={'lazy'}
+        />
+      </header>
   )
 }
