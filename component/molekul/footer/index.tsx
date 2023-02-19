@@ -1,13 +1,13 @@
 import Marquee from "react-fast-marquee"
 export default function Footer() {
   return (
-    <div className="border-purple-900 border-t-2 p-5 bg-slate-200 flex flex-col">
-        <a href="https://initer3737.github.io" target={'_blank'} className={'text-black active:bg-purple-600'}>
-          about me
+    <div className="border-purple-400 border-t-2 p-5 text-center text-white bg-purple-900 flex flex-col">
+      <div className="justify-center flex gap-1">
+        <a href="https://initer3737.github.io" target={'_blank'} className={' active:bg-purple-600'}>
+          &copy;yotsusan_machi&initer3737&LDV
         </a>
-        <a href="https://initer3737.github.io" target={'_blank'} className={'text-black active:bg-purple-600'}>
-          about me
-        </a>
+        Copyright Reserved
+      </div>
     </div>
   )
 }
