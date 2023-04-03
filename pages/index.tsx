@@ -10,8 +10,12 @@ export default function Home() {
   return (
     <div className=''>
         <Template title={'homepage'}>
-          <Header/>
-           <Homepage/>
+            <div className="flex flex-col">
+                <Header/>
+              <div className="z-10 mt-[325px] md:mt-[425px]">
+                <Homepage/>
+              </div>
+            </div>
         </Template>
     </div>
   )

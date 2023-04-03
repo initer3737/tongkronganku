@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import food1 from './homepageAssets/food1.jpg'
 import food2 from './homepageAssets/food2.jpg'
 import food3 from './homepageAssets/food3.jpg'
