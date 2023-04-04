@@ -31,11 +31,11 @@ export default function Header() {
     },[slider])
   return (
       <header className="relative">
-       <div className="absolute top-[1px]">
-        <div className={`relative ${slider === 0 ?headerCss.appear:headerCss.disappear}`}>
+       <div className="absolute top-[10px]">
+        <div className={`relative`}>
           <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">        
                                     {/**0 */}
-              <h1 className={`${headerCss.text}`}>{sliderText[Number(0)]}</h1>
+              {/* <h1 className={`${headerCss.text} ${slider === 0 ? headerCss.appear:headerCss.disappear}`}>{sliderText[Number(0)]}</h1> */}
           </div>
           <Image 
               src={Img0.src} 
@@ -47,11 +47,29 @@ export default function Header() {
             />
         </div>
        </div>
+
+       <div className="absolute top-[10px]">
+        <div className={`relative ${slider === 0 ?headerCss.appear:headerCss.disappear}`}>
+          <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">        
+                                    {/**0 */}
+              <h1 className={`${headerCss.text} ${slider === 0 ? headerCss.appear:headerCss.disappear}`}>{sliderText[Number(0)]}</h1>
+          </div>
+          <Image 
+              src={Img0.src} 
+              alt="cilok" 
+              className={`w-[100vw] h-[60vh] object-cover gambar-slider`} 
+              width={600}
+              height={450}
+              loading={'lazy'}
+            />
+        </div>
+       </div>
+
        <div className="absolute top-[10px]">
         <div className={`relative ${slider === 1 ?headerCss.appear:headerCss.disappear}`}>
           <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">        
                                     {/**1 */}
-              <h1 className={headerCss.text}>{sliderText[Number(1)]}</h1>
+            <h1 className={`${headerCss.text} ${slider === 1 ? headerCss.appear:headerCss.disappear}`}>{sliderText[Number(1)]}</h1>
           </div>
           <Image 
               src={Img1.src} 
@@ -68,7 +86,7 @@ export default function Header() {
         <div className={`relative ${slider === 2 ?headerCss.appear:headerCss.disappear}`}>
           <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">        
                                     {/**2 */}
-              <h1 className={headerCss.text}>{sliderText[Number(2)]}</h1>
+              <h1 className={`${headerCss.text} ${slider === 2 ? headerCss.appear:headerCss.disappear}`}>{sliderText[Number(2)]}</h1>
           </div>
           <Image 
               src={Img2.src} 
@@ -85,7 +103,7 @@ export default function Header() {
         <div className={`relative ${slider === 3 ?headerCss.appear:headerCss.disappear}`}>
           <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">        
                                     {/**3 */}
-              <h1 className={headerCss.text}>{sliderText[Number(3)]}</h1>
+              <h1 className={`${headerCss.text} ${slider === 3 ? headerCss.appear:headerCss.disappear}`}>{sliderText[Number(3)]}</h1>
           </div>
           <Image 
               src={Img3.src} 
@@ -102,7 +120,7 @@ export default function Header() {
         <div className={`relative ${slider === 4 ?headerCss.appear:headerCss.disappear}`}>
           <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">        
                                     {/**4 */}
-              <h1 className={headerCss.text}>{sliderText[Number(4)]}</h1>
+              <h1 className={`${headerCss.text} ${slider === 4 ? headerCss.appear:headerCss.disappear}`}>{sliderText[Number(4)]}</h1>
           </div>
           <Image 
               src={Img4.src} 
@@ -119,7 +137,7 @@ export default function Header() {
         <div className={`relative ${slider === 5 ?headerCss.appear:headerCss.disappear}`}>
           <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">        
                                     {/**5 */}
-              <h1 className={headerCss.text}>{sliderText[Number(5)]}</h1>
+              <h1 className={`${headerCss.text} ${slider === 5 ? headerCss.appear:headerCss.disappear}`}>{sliderText[Number(5)]}</h1>
           </div>
           <Image 
               src={Img5.src} 
@@ -136,7 +154,7 @@ export default function Header() {
         <div className={`relative ${slider === 6 ?headerCss.appear:headerCss.disappear}`}>
           <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">        
                                     {/**6 */}
-              <h1 className={headerCss.text}>{sliderText[Number(6)]}</h1>
+              <h1 className={`${headerCss.text} ${slider === 6 ? headerCss.appear:headerCss.disappear}`}>{sliderText[Number(6)]}</h1>
           </div>
           <Image 
               src={Img6.src} 
@@ -153,7 +171,7 @@ export default function Header() {
         <div className={`relative ${slider === 7 ?headerCss.appear:headerCss.disappear}`}>
           <div className="absolute w-[100%] h-[100%] bg-[#000]/60 text-white grid place-items-center">        
                                     {/**7 */}
-              <h1 className={headerCss.text}>{sliderText[Number(7)]}</h1>
+              <h1 className={`${headerCss.text} ${slider === 7 ? headerCss.appear:headerCss.disappear}`}>{sliderText[Number(7)]}</h1>
           </div>
           <Image 
               src={Img7.src} 
