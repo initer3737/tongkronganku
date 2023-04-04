@@ -9,7 +9,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;} /* End https://www.cursors-4u.com */
+/* Start https://www.cursors-4u.com */ * {
+  /* cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important; */
+} /* End https://www.cursors-4u.com */
 
 a {
   color: inherit;
